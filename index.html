@@ -701,9 +701,9 @@
         if (m === 1 && sys === 1) s += '<rect x="' + (mx + MW + 3) + '" y="' + TOP + '" width="6" height="' + 4 * SP + '" fill="#2b2b2b"/>';
         if (m === 0 && sys === 0) s += '<text x="' + (mx + MW - 6) + '" y="' + (TOP - 6) + '" class="breath">,</text>';
       }
-      s += '<text class="vlabel" x="72" y="' + (BOT + 46) + '">장단</text>';
-      if (sys === 0) s += '<text class="vlabel" x="72" y="' + LYY + '">1. 2.</text>';
-      else s += '<text class="vlabel ly1" x="72" y="' + LYY + '">1.</text><text class="vlabel ly2" x="72" y="' + (LYY + LYG) + '">2.</text>';
+      s += '<text class="vlabel" x="84" y="' + (BOT + 46) + '">장단</text>';
+      if (sys === 0) s += '<text class="vlabel" x="84" y="' + LYY + '">1. 2.</text>';
+      else s += '<text class="vlabel ly1" x="84" y="' + LYY + '">1.</text><text class="vlabel ly2" x="84" y="' + (LYY + LYG) + '">2.</text>';
       out += s + "</svg>";
     }
     el.innerHTML = out;
