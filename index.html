@@ -1453,6 +1453,7 @@
     });
     var now = document.getElementById("nowPlay"), who = document.querySelector(".who-plays");
     now.hidden = off; who.hidden = !off;
+    var gs = document.querySelector(".guess"); if (gs) gs.hidden = !off && g > 3;
     if (off) return;
     var v = g % 2 ? 1 : 2;
     now.innerHTML = '<div class="intro">' + g + '모둠의 <span class="bl"></span> 장단입니다!</div>' +
